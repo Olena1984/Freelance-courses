@@ -1,0 +1,71 @@
+@import url('reset.css');
+h1{
+    color: darkgoldenrod;
+}
+
+[h2]{
+    color: darkgreen;
+}
+.main-block .title{
+    color: darkorchid;
+}
+#first-link{
+    color: deeppink;
+}
+.nav-list__item{
+    color: darkolivegreen;
+}
+.section-1 p{
+    color: darkcyan;
+}
+.text .date{
+    color: black;
+}
+.title.main{
+color: rgb(167, 78, 48);
+}
+[class="link"]{
+    color: darkorange;
+}
+.list__item .link{
+    color: hotpink;
+}
+.list #list{
+    color: rgb(86, 139, 139);
+}
+.section-2 h2, 
+.section-3 h2,
+.title{
+    color: rgb(98, 211, 23);
+}
+.title ~ .text{
+    color: rgb(143, 34, 134);
+}
+.section-2+p {
+    color: darkturquoise;
+}
+[class$="__large"]{
+    width: 300px;
+}
+.section-3>p{
+   color: firebrick;
+}
+.section-3 ~ p{
+    color: rgb(240, 10, 10);
+}
+[class*="item"]{
+    color: goldenrod;
+}
+footer mark{
+    color: rgb(4, 32, 70);  
+}
+footer a{
+    color: rgb(223, 193, 25);
+}
+.list__item span,
+.text span{
+    color: dodgerblue;
+}
+.section-4 img{
+   width: 400px;
+}

@@ -30,7 +30,7 @@ color: rgb(167, 78, 48);
 .list__item .link{
     color: hotpink;
 }
-.list #list{
+.list #highlight{
     color: rgb(86, 139, 139);
 }
 .section-2 h2, 

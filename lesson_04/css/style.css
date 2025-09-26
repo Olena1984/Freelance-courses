@@ -1,0 +1,200 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Bayon:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing%20Script:wght@400&display=swap');
+@import url('fonts.css');
+
+/* Шрифти для сторінки
+1. Telegraf UltraBold;
+2.  Telegraf Regular;
+3. Bayon;
+4. Actor
+5.Dancing Script*/
+
+
+/* Header */
+
+.nav__list {
+    text-align: center;
+}
+.list__item,
+.button {
+    color:#121212;
+    font-family: Telegraf;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+.list__item a{
+    text-decoration: underline;
+}
+.button {
+    text-align: right;  
+}
+.button a{
+    color: rgb(31, 82, 224);
+    text-decoration: underline;
+    text-decoration-style:wavy;
+    text-decoration-color:rgb(31, 82, 224);
+}
+.list__item #Service{
+    text-decoration-style:dotted;
+    text-decoration-color:rgb(199, 23, 23) ;
+    color: rgb(210, 117, 30);
+}
+/* Hero */
+.hero__content {
+    text-align: left;
+}
+.hero__title {
+    color: #7a6666;
+    font-family: Actor;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    text-shadow: 5px 5px 4px #121212;
+}
+.hero__text {
+    color:#2e2525;
+    font-family: Telegraf;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 133.333%; 
+}
+/* AboutUs */
+.AboutUs a,
+.coloboration a {
+    color: #9016e2;
+    font-family: Dancing Script;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.4px;
+    text-transform: capitalize;
+}
+
+.AboutUs__title >span {
+    color: #121212;
+    font-family: Telegraf;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.AboutUs__title {
+    text-align: center;
+}
+
+.AboutUs__title .first-word{
+    color: rgb(53, 3, 22);
+    text-shadow: -5px 5px 5px rgb(173, 16, 76);
+}
+.AboutUs__title .second-word{
+    color:rgb(65, 26, 41);
+    text-shadow: -5px 5px 5px rgb(173, 16, 76);
+}
+.AboutUs__text {
+    width: 500px;
+    color:#373737;
+    font-family: Bayon;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%; 
+    word-spacing: 10px;
+}
+.AboutUs__statistic  span {
+        color:#121212;
+        font-family: Dancing Script;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 3px;
+}
+.AboutUs__statistic p{
+    color:  #141111;
+    font-family:Dancing Script;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+.years  {
+    text-align: center;
+}
+.error {
+    text-decoration: line-through;
+    text-decoration-style:double;
+    text-decoration-color:red;
+}
+.projects {
+    text-align: right;
+}
+
+.coloboration__title-1,
+.coloboration__title-2,
+.coloboration__title-3 {
+    color: #520b0b;
+    font-family: Telegraf;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; 
+    letter-spacing: -2.4px;
+    text-transform: uppercase;
+    text-shadow: -7px -7px 5px  #1f0909;
+    
+}
+.coloboration__title-2{
+    text-align: center;
+}
+.coloboration__title-3{
+    text-align: right;
+}
+.coloboration__text  {
+    /* width: 500px; */
+    color: #121212;
+    font-family: Actor;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    word-spacing: 20px;
+    text-align: center;
+}
+.info__title, .info__list{
+    color: #221818;
+    font-family: Bayon;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    text-transform: uppercase;
+    text-align: center;
+}
+.info__list {
+    font-size: 16px;
+}
+#project {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color:#720a0a;
+}
+.rights{
+    
+    font-family: Actor;
+    font-size: 18px;
+    color: #720a0a;
+    text-align: center;
+}

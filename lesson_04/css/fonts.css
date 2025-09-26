@@ -1,0 +1,14 @@
+@font-face {
+    font-family:Telegraf UltraBold ;
+    src: url(../fonfs/Telegraf\ UltraBold\ 800.woff2) format(woff2);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family:Telegraf Regular ;
+    src: url(../fonfs/TelegrafRegular_.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

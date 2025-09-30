@@ -8,7 +8,9 @@
 2.  Telegraf Regular;
 3. Bayon;
 4. Actor
-5.Dancing Script*/
+5.Dancing Script
+6. font-style:normal;
+7. font-weight: 400;*/
 
 
 /* Header */
@@ -19,10 +21,8 @@
 .list__item,
 .button {
     color:#121212;
-    font-family: Telegraf;
+    font-family:'Telegraf', sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 120%;
     letter-spacing: 0.36px;
     text-transform: uppercase;
@@ -50,10 +50,8 @@
 }
 .hero__title {
     color: #7a6666;
-    font-family: Actor;
+    font-family:'Actor', sans-serif;
     font-size: 88px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 100%; 
     letter-spacing: 3px;
     text-transform: uppercase; 
@@ -61,7 +59,7 @@
 }
 .hero__text {
     color:#2e2525;
-    font-family: Telegraf;
+    font-family:'Telegraf', sans-serif;
     font-size: 24px;
     font-weight: 800;
     line-height: 133.333%; 
@@ -70,10 +68,8 @@
 .AboutUs a,
 .coloboration a {
     color: #9016e2;
-    font-family: Dancing Script;
+    font-family:'Dancing Script', sans-serif;
     font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 150%;
     letter-spacing: 0.4px;
     text-transform: capitalize;
@@ -81,10 +77,8 @@
 
 .AboutUs__title >span {
     color: #121212;
-    font-family: Telegraf;
+    font-family:'Telegraf', sans-serif;
     font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 100%; 
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -104,28 +98,22 @@
 .AboutUs__text {
     width: 500px;
     color:#373737;
-    font-family: Bayon;
+    font-family:'Bayon', sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 180%; 
     word-spacing: 10px;
 }
 .AboutUs__statistic  span {
-        color:#121212;
-        font-family: Dancing Script;
-        font-size: 72px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 110%;
-        letter-spacing: 3px;
+    color:#121212;
+    font-family:'Dancing Script', sans-serif;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: 3px;
 }
 .AboutUs__statistic p{
     color:  #141111;
-    font-family:Dancing Script;
+    font-family:'Dancing Script', sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 120%;
     letter-spacing: 0.36px;
     text-transform: uppercase;
@@ -146,10 +134,8 @@
 .coloboration__title-2,
 .coloboration__title-3 {
     color: #520b0b;
-    font-family: Telegraf;
+    font-family:'Telegraf', sans-serif;
     font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 100%; 
     letter-spacing: -2.4px;
     text-transform: uppercase;
@@ -165,20 +151,16 @@
 .coloboration__text  {
     /* width: 500px; */
     color: #121212;
-    font-family: Actor;
+    font-family:'Actor',sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 150%; 
     word-spacing: 20px;
     text-align: center;
 }
 .info__title, .info__list{
     color: #221818;
-    font-family: Bayon;
+    font-family:'Bayon', sans-serif;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 150%; 
     text-transform: uppercase;
     text-align: center;
@@ -193,7 +175,7 @@
 }
 .rights{
     
-    font-family: Actor;
+    font-family:'Actor', sans-serif;
     font-size: 18px;
     color: #720a0a;
     text-align: center;

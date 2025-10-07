@@ -46,8 +46,8 @@ h1{
 .wrap{
     min-height: 880px;
     margin-top: 160px;
-    background-image: url(..//images/reflection.png),
-                    url(..//images/bg_image.png);
+    background-image: url(../images/reflection.png),
+                    url(../images/bg_image.png);
     background-repeat: no-repeat; 
     background-size: cover;           
     border-radius: 15px 0 0 15px;
@@ -94,7 +94,7 @@ h1{
 .section-2{
     max-width: 1920px;
     margin: 0 auto;
-    background-image: url(..//images/furniture/bg-furniture.png);
+    background-image: url(../images/furniture/bg-furniture.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,14 +185,14 @@ h1{
 }
 
 .list-item-1, .list-item-2, .list-item-3{
-    background-image: url(..//images/LearnXpert/Check_badge.png);
+    background-image: url(../images/LearnXpert/Check_badge.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: auto;
     min-height: 32px;
 }
 .list-item-4, .list-item-5{
-    background-image: url(..//images/LearnXpert/Check_badge-gray.png);
+    background-image: url(../images/LearnXpert/Check_badge-gray.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: auto;

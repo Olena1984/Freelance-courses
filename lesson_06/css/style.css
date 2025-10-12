@@ -103,13 +103,13 @@ h1{
 .banner{
     max-width: 1390px;
     display: block;
-    margin:0 auto;   
+    margin:0 auto;  
+    padding-top: 114px; 
+    padding-bottom: 110px;
 }
 .block-text{
     max-width: 50%;
     text-align: left;
-    padding-top: 114px; 
-    padding-bottom: 110px;
     padding-left: 60px;
     margin-left: 50%; 
 }
@@ -132,10 +132,9 @@ h1{
     text-transform: uppercase;
     margin-bottom: 16px;
     text-align: left;
+    font-weight: 800; 
 }
-.main-title-1{
-    font-weight: 800;
-}
+
 .main-title-2{
     font-weight: 700;
 }
@@ -147,10 +146,10 @@ h1{
     line-height:  125%; 
 }
 .line-1{
+    display: block;
+    border-bottom: 1px solid #2F302C;
     margin-bottom: 36px;
     width: 308px;
-    height: 1px;
-    background-color: #2F302C;
 }
 
 /* example LearnXpert */

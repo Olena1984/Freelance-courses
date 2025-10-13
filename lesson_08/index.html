@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>lesson_08 (WEB-графіка)</title>
+    </head>
+
+    <body>
+        <div class="wrapper" >
+            <header class="header">
+               <a href="#">Shanti</a>
+            </header>
+            <main>
+               <div class="background-image">
+                    <h1>Елемент дизайну - фонове зображення сторінки, растрове зображення</h1>
+                    <p>PNG - AVIF</p>
+                    <div class="flower"> 
+                        <img srcset="images/image_bg/image_bg_2x.avif 2x, images/image_bg/image_bg_3x.avif 3x" src="images/image_bg/image_bg_1x.avif" alt="the right part of the flower" class="flower-right">
+                        <img srcset="images/image_bg/image-bg-2_2x.avif 2x, images/image_bg/image-bg-2_3x.avif 3x" src="images/image_bg/image-bg-2_1x.avif" alt="the left part of the flower">
+                    </div >
+               </div>     
+                <div class="image">
+                    <div>
+                        <h2>Векторне зображення - icon</h2>
+                        <p>SVG</p>
+                        <img src="images/image_svg.svg" alt="icon">
+                    </div>
+                    <div>
+                        <h2>Растрове зображення </h2>
+                        <p>PNG - при конвертації у формати avif та webp вага зображення збільшується. </p>
+                        <img srcset="images/right-arrow_2x.png 2x, images/right-arrow_3x.png 3x" src="images/right-arrow_1x.png" alt="right-arrow_1x" class="icon-arrow">
+                    </div>
+                    <div class="photos">
+                        <h2>Растрове зображення - photo</h2>
+                        <p>PNG - AVIF</p>
+                        <div>
+                            <img srcset="images/Image_1/image_01_2x.avif 2x, images/Image_1/image_01_3x.avif 3x" src="images/Image_1/image_01_1x.avif" alt="woman doing a yoga pose" class="photo">
+                        </div>
+                       <div> 
+                             <img srcset="images/image_2/image_02_2x.avif 2x, images/image_2/image_03_3x.avif 3x" src="images/image_2/image_02_1x.avif" alt="woman doing a yoga pose" class="photo"></div>
+                        <div>
+                            <h2>Застосовано обгортку "picture"</h2>
+                            <picture>
+                                <source srcset="images/image_3/image_03_1x.avif 1x, images/image_3/image_03_2x.avif 2x, images/image_3/image_03_3x.avif 3x" type="image/avif">
+                                <img srcset="images/image_3/image_03_2x.png 2x, images/image_3/image_03_3x.png 3x" src="images/image_3/image_03_1x.png" alt="" class="photo">
+                            </picture>
+                        </div>
+                        <div>
+                            <h2>Застосовано обгортку "picture"</h2>
+                            <picture>
+                                <source srcset="images/image_4/image_04_1x.avif 1x, images/image_4/image_04_2x.avif 2x, images/image_4/image_04_3x.avif 3x" type="image/avif">
+                                <img srcset="images/image_4/image_04_2x.png 2x, images/image_4/image_04_3x.png 3x" src="images/image_4/image_04_1x.png" alt="" class="photo">
+                            </picture>
+                        </div>
+                        <div>
+                            <h2>Застосовано обгортку "picture"</h2>
+                            <picture>
+                                <source srcset="images/image_5/image_05_1x.avif 1x, images/image_5/image_05_2x.avif 2x, images/image_5/image_05_3x.avif 3x" type="image/avif">
+                                <img srcset="images/image_5/image_05_2x.png 2x, images/image_5/image_05_3x.png 3x" src="images/image_5/image_05_1x.png" alt="" class="photo">
+                            </picture>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+    
+           <footer>
+                <p>&copy; 2025  My Website. All rights reserved.</p>
+                
+            </footer>
+            
+        </div >
+    </body>
+</html>

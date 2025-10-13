@@ -1,0 +1,77 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(224, 235, 232);
+}
+.wrapper >*:not(last-child){
+    margin-bottom: 30px;
+}
+main div>p, footer p {
+    font-family: "Montsserat", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+header a{
+    color: #BA936F;
+    font-family: "Praysire";
+    font-size: 40px;
+}
+.background-image{
+    max-width: 100%;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.background-image h1{
+    font-family: "Montsserat", sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+.flower{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px 5px 10px 5px;
+    
+}
+.flower > img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.flower-right{
+    vertical-align: top;
+    margin-right: 50px;
+}
+.photos >div:not(:last-child){
+    margin-bottom: 20px;
+    
+}
+.image >div:not(:last-child){
+    margin-bottom: 20px;
+}
+.image div > h2{
+    font-family: "Montsserat", sans-serif;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.photos img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+   
+}
+.icon-arrow{
+    width: 50px;
+    height: auto;
+}
+footer p{
+    margin-bottom: 0;
+    text-align: center;
+}

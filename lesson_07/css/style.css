@@ -1,0 +1,244 @@
+@import url(reset.css);
+
+/*Girassol-regular {
+    font-family: "Girassol", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+*/
+
+/* homework */
+body{
+    background-color: bisque;
+}
+.wrapper{
+    font-family: "Montserrat", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+.header {
+   margin-bottom: 50px;
+}
+.nav {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+} 
+.menu-item:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(98, 102, 94);
+    color:rgb(98, 102, 94);
+    text-transform: uppercase;
+}
+.menu-item:not(:last-child) {
+    margin-right: 100px;
+}
+
+.menu-link {
+    font-size: 35px;
+    font-family:"Girassol", serif;
+}
+main >* {
+    margin-bottom: 30px;
+}
+.section-1 , .section-2,.section-3 {
+    border: 2px solid gray;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-1, .container-2 {
+    margin:0 auto;
+    padding: 25px;  
+}
+.container-1 >p:not(:last-child), 
+.container-2 >p:not(:last-child){
+    margin-bottom: 15px;
+}
+.title {
+    font-size: 30px;
+    font-family: "Monsserrat", sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.title::before, .title::after {
+    content: "";
+    background-image: url(../images/cat-footprint.png);
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: top;
+}
+.title:hover::before, .title:hover::after{
+    width: 35px;
+    height: 35px;
+}
+.title::before{
+    margin-right: 15px;
+}
+.title::after {
+    margin-left: 15px;
+}
+.title:hover{
+    color:rgb(26, 39, 95);
+    text-decoration: underline;
+    text-decoration-style:dashed;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    font-size: 38px;
+    text-decoration-color: rgb(26, 39, 95);
+}
+.text{
+    font-size: 20px;
+    font-family:"Girassol", serif;
+    line-height: 150%;
+    text-align: justify;
+}
+
+.quotes-list, .facts-list {
+    margin-top: 25px;
+}
+.quotes-list li, .facts-list li {
+    font-size: 19px;
+    line-height: 1.3;
+    font-family: "Montserrat", sans-serif;
+}
+.quotes-list li:nth-child(odd){
+    background-color: rgb(198, 252, 247);
+    border-radius: 10px;
+}
+.quotes-list li:nth-child(even){
+    background-color: rgb(241, 224, 167);
+    border-radius: 10px;
+}
+.quotes-list li a:visited{
+    color: rgb(160, 37, 160);
+}
+
+.container-1 >p:not(:last-child), 
+.container-2 >p:not(:last-child){
+    margin-bottom: 15px;
+}
+.container-1 >p:not(:last-child), 
+.container-2 >p:not(:last-child){
+    margin-bottom: 15px;
+}
+.quotes-list >li:not(:last-child), 
+.facts-list >li:not(:last-child) {
+    margin-bottom: 20px;
+    display:inline-block;
+}
+.facts-list li::before {
+    content: "";
+    background-image: url(../images/cat-icon.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    height: 32px;
+    padding-left: 40px;
+}
+.facts-list li:hover:nth-child(2n) {
+    background-color: rgb(223, 131, 213);
+    border-radius: 10px;
+    
+}
+.facts-list li:nth-child(2n+1) {
+    background-color: rgb(139, 113, 143);
+    border-radius: 10px;
+}
+
+/* example LearnXpert */
+.section-3{
+    padding: 20px;
+    background-color: #fff;
+}
+.price-block {
+    max-width: 351px;
+    margin:0 auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+.block-list{
+    max-width: 271px;
+    margin:0 auto;
+    padding-block: 16px;
+
+}
+.list li{
+    min-height: 32px;
+}
+
+.list-item>p {
+    display: inline-block;
+    color:#252B42;
+    font-family:"Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height:171.429%; 
+    letter-spacing: 0.2px;
+}
+.list-item::before{
+    content: "";
+    background-image: url(../images/LearnXpert/Check_badge.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    vertical-align: top;
+    margin-right: 10px;
+
+}
+.list-item:hover::before{
+    width: 40px;
+    height: 40px;
+}
+.list >li:not(:last-child){
+    margin-bottom: 15px;
+}
+.list li:nth-child(4)::before,
+.list li:nth-child(5)::before{
+    content: "";
+    background-image: url(../images/LearnXpert/Check_badge-gray.png);
+}
+.list li:nth-child(4):hover::before,
+.list li:nth-child(5):hover::before{
+    content: "";
+    background-image: url(../images/LearnXpert/Check_badge.png);
+    width: 40px;
+    height: 40px;
+   
+}
+footer >*:not(:last-child){
+    margin-bottom: 18px;
+}
+footer p{
+    text-align: center;
+    font-size: 16px;
+    font-family: "Girassol", serif;
+    color: #2F302C;
+}
+footer a{
+    display: block;
+    font-size: 20px;
+    font-family: "Girassol", serif;
+    text-align: center;
+    
+}
+footer a:hover{
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-size: 25px;
+}
+
+

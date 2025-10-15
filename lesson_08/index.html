@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>lesson_08 (WEB-графіка)</title>
+    </head>
+
+    <body>
+        <div class="wrapper" >
+            <header class="header">
+               <a href="#">Shanti</a>
+            </header>
+            <main>
+               <div class="background-image">
+                    <h1>Елемент дизайну - фонове зображення сторінки, растрове зображення</h1>
+                    <p>PNG - AVIF</p>
+                    <div class="flower"> 
+                        <img srcset="images/image_bg/image_bg_2x.avif 2x, images/image_bg/image_bg_3x.avif 3x" src="images/image_bg/image_bg_1x.avif" alt="the right part of the flower" class="flower-right">
+                        <img srcset="images/image_bg/image-bg-2_2x.avif 2x, images/image_bg/image-bg-2_3x.avif 3x" src="images/image_bg/image-bg-2_1x.avif" alt="the left part of the flower">
+                    </div >
+               </div>     
+                <div class="image">
+                    <div>
+                        <h2>Векторне зображення - icon</h2>
+                        <p>SVG</p>
+                        <img src="images/image_svg.svg" alt="icon">
+                    </div>
+                    <div  >
+                        <h2>Растрове зображення </h2>
+                        <p>PNG - при конвертації у формати avif та webp вага зображення збільшується. </p>
+                        <div class="arrow">
+                            <img srcset="images/right-arrow_2x.png 2x, images/right-arrow_3x.png 3x" src="images/right-arrow_1x.png" alt="right-arrow_1x" class="icon-arrow">
+                        </div>
+
+                    </div>
+                    <div class="photos">
+                        <h2>Растрове зображення - photo</h2>
+                        <p>JPEG - AVIF</p>
+                        <div>
+                            <img srcset="images/image_1/image_2_2x.avif 2x, images/image_1/image_3_3x.avif 3x" src="images/image_1/image_1_1x.avif" alt="woman doing a yoga pose" class="photo">
+                        </div>
+                       <div> 
+                             <img srcset="images/image_2/image_2_2_2x.avif 2x, images/image_2/image_3_2_3x.avif 3x" src="images/image_2/image_1_2_1x.avif" alt="woman doing a yoga pose" class="photo">
+                        </div>
+                        <div>
+                            <h2>Застосовано обгортку "picture"</h2>
+                            <picture>
+                                <source srcset="images/image_3/image_1_3_1x.avif 1x, images/image_3/image_2_3_2x.avif 2x, images/image_3/image_3_3_3x.avif 3x" type="image/avif">
+                                <img srcset="images/image_3/image_2_3_2x.jpg 2x, images/image_3/image_3_3_3x.jpg 3x" src="images/image_3/image_1_3_1x.jpg" alt="woman doing a yoga pose" class="photo">
+                            </picture>
+                        </div>
+                        <div>
+                            <h2>Застосовано обгортку "picture"</h2>
+                            <picture>
+                                <source srcset="images/image_4/image_1_4_1x.avif 1x, images/image_4/image_2_4_2x.avif 2x, images/image_4/image_3_4_3x.avif 3x" type="image/avif">
+                                <img srcset="images/image_4/image_2_4_2x.jpg 2x, images/image_4/image_3_4_3x.jpg 3x" src="images/image_4/image_1_4_1x.jpg" alt="woman doing a yoga pose" class="photo">
+                            </picture>
+                        </div>
+                        <div>
+                            <h2>Застосовано обгортку "picture"</h2>
+                            <picture>
+                                <source srcset="images/image_5/image_1_5_1x.avif 1x, images/image_5/image_2_5_2x.avif 2x, images/image_5/image_3_5_3x.avif 3x" type="image/avif">
+                                <img srcset="images/image_5/image_2_5_2x.jpg 2x, images/image_5/image_3_5_3x.jpg 3x" src="images/image_5/image_1_5_1x.jpg" alt="woman doing a yoga pose" class="photo">
+                            </picture>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+    
+           <footer>
+                <p>&copy; 2025  My Website. All rights reserved.</p>
+                
+            </footer>
+            
+        </div >
+    </body>
+</html>

@@ -65,8 +65,9 @@ header a{
     max-width: 100%;
     height: auto;
     display: block;
-   
+    border-radius: 33px;   
 }
+
 .icon-arrow{
     width: 50px;
     height: auto;

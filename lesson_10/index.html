@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>lesson_10 (Position)</title>
+    </head>
+
+    <body>
+        <div class="wrapper" >
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__nav-menu menu-nav nav">
+                        <ul class="nav__list list">
+                            <li class="list__item">
+                                <a href="https://www.w3schools.com/css/css_positioning.asp" class="list__link">CSS positions </a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#static" class="list__link" >static</a>
+                            </li>
+                            <li class="list__item">
+                               <a href="#relative" class="list__link">relative</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#fixed" class="list__link">fixed</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#absolute" class="list__link">absolute</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="#sticky" class="list__link">sticky</a>
+                            </li>
+                            <li class="list__item">
+                                <a href="index.hw.html" target="_blank" class="list__link">homework</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="section main-section">
+                    <div class="section__container ">
+                        <div class="block static-block" id="static">
+                            <h1 class="block__title title">CSS position - static</h1>
+                            <div class="block__item block__item--yellow">One</div>
+                            <div class="block__item block__item--orange">Two</div>
+                            <div class="block__item block__item--green">Three</div>
+                            <div class="block__item block__item--blue">four</div>
+                            <p>
+                                Для блоку "One" задано позиціонування  top: 30px;
+                                left:20px. Як бачимо змін ніяких не відбулося. Дані властивості не впливають на об'єкт із властивістю static position.
+                            </p>
+                        </div>
+                        <div class="block relative-block" id="relative">
+                            <h1 class="block__title title">CSS position - relative</h1>
+                            <div class="block__item block__item--yellow">One</div>
+                            <div class="block__item block__item--orange block__item--left">Two</div>
+                            <div class="block__item block__item--green block__item--center">Three</div>
+                            <div class="block__item block__item--blue block__item--right">Four</div>
+                            <p>
+                                Для блоків "Two" та "Four" задано позиціонування   position: relative;
+                                bottom: 40px; left: 35px; та  position: relative;
+                                top: 24px; right: 40px; відповідно. І для блоку "Four" задано  z-index: -1 щоб блок заховався за попереднім блоком "Three". Щоб блок "Four" заховався за блок "Three" - потрібно для батьківського елементу "relative-block" задати  position: relative; та z-index: 0; в іншому випадку блок "Four" стане невидимий - його перекриє фон.
+                            </p>
+                            <p>На прикладі блок "Four" зних - його перекриває фон батьківського блоку. </p>
+                            <img src="images/image.png" alt="screenshot of an example with a negative z-index">
+                            <p>А якщо ми приберемо фон взагалі - то тоді не потрібно задавати відносне позиціонування та нульвий z-index для батьківського блоку. Достаньо задати для блоку "Four" z-index: -1;(скрін 2).  </p>
+                            <img src="images/image_2.png" alt="screenshot of an example with a negative z-index">
+                            <p>А для того щоб блок "Three" був вищий за блоки "Two" та "Four" необхідно блоку  "Three" задати більший z-index (в даному випадку z-index:3;) за z-index у  відповідний блоків  "Two" та "Four ( z-index:1;  z-index:2; відповідно)".</p>
+                            <img src="images/image_3.png" alt="screenshot of an example with a negative z-index">
+
+                        </div>
+
+                        <div class="block fixed-block" id="fixed">
+                            <h1 class="block__title title ">CSS position - fixed</h1>
+                            <div class="block__item block__item--yellow ">One</div>
+                            <div class="block__item block__item--orange block__item--bottom">Two</div>
+                            <div class="block__item block__item--green block__item--top">Three</div>
+                            <div class="block__item block__item--blue ">Four</div>
+                            <P>Блоку "Two" задано position: fixed; bottom:0px;
+                                right:0px;. Блок зафіксувався в правому нижньому куті вікна огляду  і прокручується із сторінкою. <br> А якщо блоку "Three" задати фіксоване позиціонування top:50%; left:50%; - він зафіксується посередині екрану і заважатиме огляду контенту.</P>
+                            <img src="images/image_4.png" alt="block three is fixed in the middle of the screen">
+
+                        </div>
+                        <div class="block absolute-block" id="absolute">
+                            <h1 class="block__title title">CSS position - absolute</h1>
+                            <div class="block__item block__item--yellow block__item--1">One</div>
+                            <div class="block__item block__item--orange ">Two</div>
+                            <div class="block__item block__item--green">Three</div>
+                            <div class="block__item block__item--blue">Four</div>
+                            <p>Блок "One" позиціонований абсолютно  position: absolute; top: 80px;
+                                left: 480px; відносно свого батьківського блоку </p>
+
+                            <P>На малюнку нище - блоку "One" задано position: absolute;  top: 500px; left: 800px; і даний блок буде позиціонований відносно body так як батькіському блоку  "absolute-block" не задано position:relative;. </P>
+                            <img src="images/image_5.png" alt="block 1 positioned absolutely body">
+                        </div>
+
+                        <div class="block sticky-block" id="sticky">
+                            <h1 class="block__title title">CSS position - sticy</h1>
+                            <div class="block__item block__item--yellow block__item--one">One</div>
+                            <p>Джей — відомий письменник, що втратив натхнення і життєві орієнтири. Він живе дитячими спогадами, у яких завжди літо і старий Джо з його чарівним вином та фантастичними історіями. Коли ж Джей нарешті зважується відвідати «місце сили» свого дитинства, то замість хати Джо знаходить лише руїну — і кілька пляшок його особливого вина, здатного магічним чином змінювати життя.</p>
+
+                            <div class="block__item block__item--orange block__item--two">Two</div>
+                            <p>Тоді чоловік раптово вирішує покинути все і купує старий будинок у французькому містечку Ланскне-су-Танн. Здається, тепер він нарешті здобуде втрачене натхнення, визнання та захмарні гонорари. Однак несподівано для себе Джей опиниться перед вибором: якого життя він хоче насправді? Того, в якому немає місця казці та мріям, але є гонорари й слава? Чи іншого, сповненого буденних радощів, простих речей і любові — солодкої, як особливе вино старого Джо?..</p>
+
+                            <div class="block__item block__item--green block__item--three">Three</div>
+                            <p>Багато років тому Джей написав твір, що потім йому визнання. Але після того… щось втратилось. Муза, натхнення - щось полишило Джея, і гроші він тепер заробляє хоч і письменством, але творів, які високою літературою не вважає. В стосунках не все добре також, і коли одного дня Джей бачить рекламний проспект з будинком на продаж, який нагадує йому роки юності, він купує його, слухаючи поклик серця. Так із Англії він потрапляє до маленького містечка у Франції. У Ланксне всі знають все про всіх - і якщо якась думка у жителів містечка про інших складається, то вона затримується на роки.</p>
+
+                            <div class="block__item block__item--blue block__item--four">Four</div>
+                            <p> Облаштовуючи куплений будинок та намагаючись налагодити стосунки з відверто вороже налаштованою сусідкою, про яку в містечку ходить не дуже добра слава, Джей раптово (хто б сумнівався?) відчуває натхнення писати - і не останню роль в цьому відіграють запилені пляшки дивного на смак вина, яке він колись отримав як останнє (чи ні?) «Прощавай» від старого друга. Магічний реалізм у Гарріс такий, що йому віриш, а створювати атмосферу вона безперечний майстер. Тягуча і солодкава, як старе вино, оповідь занурює в себе і зігріває - особливо осінніми вечорами. Не можу сказати, що мені імпонував головний герой, бо його поведінка на початку книжки - ну відверто така собі, але атмосферність та задоволення я отримала сповна. Сподобалось!</p>
+                        </div>    
+                    </div>
+                    
+                </div>
+                
+            </main>
+    
+           <footer>
+                <p>&copy; 2025  My Website. All rights reserved.</p>
+                
+            </footer>
+            
+        </div>
+    </body>
+</html>

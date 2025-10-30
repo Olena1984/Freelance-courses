@@ -1,0 +1,292 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+.wrapper {
+    max-width: 1500px;
+    /* margin:0 auto; */
+    background-color: rgb(202, 229, 241);
+}
+[class*="__container"]{
+    max-width: 1000px;
+    margin:0 auto;
+}
+.wrapper > *:not(:last-child){
+    margin-bottom: 150px;
+}
+.header__container {
+    background-color: rgb(157, 213, 236);
+    border-radius: 20px;
+    box-shadow: 9px 9px 8px  rgb(117, 190, 219);
+}
+.header__menu {
+    text-align: center;
+}
+.nav-menu__item {
+    display: inline-block;
+    padding: 30px;
+    position: relative;
+}
+.nav-menu__item:hover .nav-menu__link {
+    font-size: 40px;
+    color: rgb(138, 123, 123); 
+}
+.nav-menu__item:hover .sub-menu{
+    visibility: visible;
+    opacity: 1;
+
+    font-size: 40px;
+    color: rgb(82, 69, 69);  
+}
+.nav-menu__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav-menu__link,
+.sub-menu__link {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(73, 70, 70);  
+}
+.sub-menu {
+    width: 300px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(157, 213, 236);
+    padding: 20px;
+    opacity:0;
+    visibility:hidden;
+    border-radius: 10px;
+    box-shadow: 9px 9px 8px  rgb(117, 190, 219);
+}
+
+.sub-menu__item:not(:last-child){
+    margin-bottom: 20px;
+}
+.sub-menu__link:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 35px;
+    color: rgb(138, 123, 123); 
+}
+
+.section {
+}
+.section__container {
+}
+h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.wrap, .wrap-2 {
+    margin:0 auto;
+    padding: 20px;
+    font-size: 0;
+}
+
+.block, .block-2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(185, 178, 178, 0.5);
+    display: inline-block;
+    margin-bottom: 40px;
+    vertical-align: top;
+    font-size: 16px;
+}
+.block__item, .block-2__item {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(121, 180, 148);
+    text-align: center;
+    padding-block: 35px;
+}
+.block__item p,
+.block-2__item p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.block:not(:nth-child(4n)),
+.block-2:not(:nth-child(4n)){
+    margin-right: 53px;
+}
+.block:nth-child(1) .block__item:hover{
+    transform:translate(50px, -25px);
+    /* translate: 50px -25px; */
+}
+.block:nth-child(2) .block__item:hover{
+    /* transform:translate(40%, 10%); */
+    translate: 40% 10%;
+}
+.block:nth-child(3) .block__item:hover{
+    /* transform:translate(0%, 20%); */
+    translate: 0% 20%;
+}
+.block:nth-child(4) .block__item:hover{
+    transform: scale(0.5);
+    /* scale: 0.5; */
+}
+.block:nth-child(5) .block__item:hover{
+    transform: scale(2, 1.5);
+    /* scale: 2 1.5; */
+}
+.block:nth-child(6) .block__item:hover{
+    transform: rotate(45deg);
+    /* rotate: 45deg; */
+}
+.block:nth-child(7) .block__item:hover{
+    transform: rotateX(-45deg);
+}
+.block:nth-child(8) .block__item:hover{
+    transform: rotate(45deg);
+    /* rotate: 45deg; */
+}
+.block:nth-child(9) .block__item:hover{
+    transform: skew(45deg, 25deg); 
+}
+.block:nth-child(10) .block__item:hover{
+    transform: skewX(-15deg);  
+}
+.block:nth-child(11) .block__item:hover{
+    transform: skewY(-25deg);   
+}
+.block:nth-child(12) .block__item:hover{
+    transform:matrix(1, -0.3, 0, 1, 0, 50);   
+}
+.block:nth-child(13) .block__item:hover{
+    transform-origin: bottom right;
+    transform: rotate(50deg);   
+}
+.block:nth-child(14) .block__item:hover{
+    transform-origin: -15% 30%;
+    transform: skewY(-35deg);   
+}
+.block:nth-child(15) .block__item:hover{
+    transform-origin: 25% 30%;
+    transform: scale(0.5);   
+}
+.block-2{
+    perspective: 100px;
+    perspective-origin: center;
+}
+
+.block-2:nth-child(1) .block-2__item:hover{
+    transform: rotateY(25deg);
+}
+.block-2:nth-child(2) .block-2__item:hover{
+    transform: translateZ(-25px);
+}
+.block-2:nth-child(3) .block-2__item:hover{
+    transform: skew(50deg);
+}
+.block-2:nth-child(4) .block-2__item:hover{
+    transform: rotateX(25deg);
+}
+.block-2-3d{
+    transform-style: preserve-3d;
+}
+.block-2:nth-child(5) .block-2__item:hover{
+    transform: rotateX(45deg);
+}
+.coin{
+    display: inline-block;
+    margin: 0 auto;
+}
+.coin__body {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    perspective: 500px;
+    
+}
+.coin__face, .coin__front{
+    overflow: hidden;
+    transition: all 1s;
+}
+.coin__face {
+    transform: rotateY(0deg); 
+}
+.coin__front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.coin__body:hover .coin__face{
+    transform: rotateY(-180deg);
+}
+.coin__body:hover .coin__front{
+    transform: rotateY(0deg);
+}
+
+
+.window {
+    display: inline-block;
+    margin-left: 100px;
+}
+.window__body {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    perspective: 400px;
+}
+.window__open, .window__close{
+    overflow: hidden;
+    transition: all 1s;
+}
+.window__close {
+    transform: rotateY(0deg); 
+    backface-visibility: hidden;
+}
+.window__open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.window__body:hover .window__open{
+    transform: rotateY(0deg);
+}
+.window__body:hover .window__close{
+    transform: rotateY(-180deg);
+}
+
+.magic-ball {
+    display: inline-block;
+    margin-top: 80px;
+}
+.magic-ball__body {
+    position: relative;
+    perspective: 300px;
+    width: 300px;
+    height: 300px;
+}
+.magic-ball__ball, .magic-ball__sphere{
+    overflow: hidden;
+    transition: all 1s;
+}
+.magic-ball__ball {
+
+    transform: rotateY(0deg);
+}
+.magic-ball__sphere {
+    position: absolute;
+    top: 32px;
+    left: -2px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.magic-ball__body:hover .magic-ball__ball{
+    transform: rotateY(-180deg);
+}
+.magic-ball__body:hover .magic-ball__sphere{
+    transform: rotateY(0deg);
+}

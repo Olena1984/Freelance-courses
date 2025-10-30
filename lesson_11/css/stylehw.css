@@ -271,7 +271,7 @@ h1{
 .nature-block{
     width: 100%;
     height: 700px;
-    background-image: url("/images/nature.png");
+    background-image: url("../images/nature.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

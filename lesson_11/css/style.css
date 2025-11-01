@@ -115,58 +115,58 @@ h2{
 .block-2:not(:nth-child(4n)){
     margin-right: 53px;
 }
-.block:nth-child(1) .block__item:hover{
+.block:nth-child(1):hover .block__item{
     transform:translate(50px, -25px);
     /* translate: 50px -25px; */
 }
-.block:nth-child(2) .block__item:hover{
+.block:nth-child(2):hover .block__item{
     /* transform:translate(40%, 10%); */
     translate: 40% 10%;
 }
-.block:nth-child(3) .block__item:hover{
+.block:nth-child(3):hover .block__item{
     /* transform:translate(0%, 20%); */
     translate: 0% 20%;
 }
-.block:nth-child(4) .block__item:hover{
+.block:nth-child(4):hover .block__item{
     transform: scale(0.5);
     /* scale: 0.5; */
 }
-.block:nth-child(5) .block__item:hover{
+.block:nth-child(5):hover .block__item{
     transform: scale(2, 1.5);
     /* scale: 2 1.5; */
 }
-.block:nth-child(6) .block__item:hover{
+.block:nth-child(6):hover .block__item{
     transform: rotate(45deg);
     /* rotate: 45deg; */
 }
-.block:nth-child(7) .block__item:hover{
+.block:nth-child(7):hover .block__item{
     transform: rotateX(-45deg);
 }
-.block:nth-child(8) .block__item:hover{
+.block:nth-child(8):hover .block__item{
     transform: rotate(45deg);
     /* rotate: 45deg; */
 }
-.block:nth-child(9) .block__item:hover{
+.block:nth-child(9):hover .block__item{
     transform: skew(45deg, 25deg); 
 }
-.block:nth-child(10) .block__item:hover{
+.block:nth-child(10):hover .block__item{
     transform: skewX(-15deg);  
 }
-.block:nth-child(11) .block__item:hover{
+.block:nth-child(11):hover .block__item{
     transform: skewY(-25deg);   
 }
-.block:nth-child(12) .block__item:hover{
+.block:nth-child(12):hover .block__item{
     transform:matrix(1, -0.3, 0, 1, 0, 50);   
 }
-.block:nth-child(13) .block__item:hover{
+.block:nth-child(13):hover .block__item{
     transform-origin: bottom right;
     transform: rotate(50deg);   
 }
-.block:nth-child(14) .block__item:hover{
+.block:nth-child(14):hover .block__item{
     transform-origin: -15% 30%;
     transform: skewY(-35deg);   
 }
-.block:nth-child(15) .block__item:hover{
+.block:nth-child(15):hover .block__item{
     transform-origin: 25% 30%;
     transform: scale(0.5);   
 }
@@ -175,22 +175,22 @@ h2{
     perspective-origin: center;
 }
 
-.block-2:nth-child(1) .block-2__item:hover{
+.block-2:nth-child(1):hover .block-2__item{
     transform: rotateY(25deg);
 }
-.block-2:nth-child(2) .block-2__item:hover{
+.block-2:nth-child(2):hover .block-2__item{
     transform: translateZ(-25px);
 }
-.block-2:nth-child(3) .block-2__item:hover{
+.block-2:nth-child(3):hover .block-2__item{
     transform: skew(50deg);
 }
-.block-2:nth-child(4) .block-2__item:hover{
+.block-2:nth-child(4):hover .block-2__item{
     transform: rotateX(25deg);
 }
 .block-2-3d{
     transform-style: preserve-3d;
 }
-.block-2:nth-child(5) .block-2__item:hover{
+.block-2:nth-child(5):hover .block-2__item{
     transform: rotateX(45deg);
 }
 .coin{

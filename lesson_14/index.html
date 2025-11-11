@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework_14 (practice)</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+           <div class="header__container">
+                <h1 class="header__title">Forms</h1>
+                <ul class="header__list list">
+                    <li class="list__item">
+                        <p>Forms practice</p>
+                    </li>
+                    <li class="list__item">
+                        <a href="index2.html" target="_blank">Homework_14</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="section">
+                <div class="block">
+                    <div class="block__container">
+                        <div class="block__item item">
+                            <h2 class="item__title">Create Account</h2>
+                            <form action="#" method="post" enctype="multipart/form-data" class="form">
+                                <label for="name" class="form__label">Name:</label>
+                                <input type="text" id="name" name="name" required   class="form__input">
+                                    
+                                <label for="email" class="form__label">Email:</label>
+                                <input type="email" id="email" name="email" required class="form__input">
+                                    
+                                <label for="psw" class="form__label">Password:</label>
+                                <input type="password" id="psw" name="password" required class="form__input">
+
+                                <label for="password" class="form__label">Сonfirm password:</label>
+                                <input type="password" id="password" name="password" required class="form__input">
+
+                                <input type="submit" value="Confirm" class="form__input form__button">
+                            </form>
+                        </div>
+
+                        <div class="block__item block__item--two  item2">
+                            <h2 class="item2__title">Order form</h2>
+                            <form action="#" method="get" enctype="multipart/form-data" class="form2">
+                                <label for="name2" class="form2__label">Name:</label>
+                                <input type="text" id="name2" name="name" required   class="form2__input">
+                                    
+                                <label for="email2" class="form2__label">Email:</label>
+                                <input type="email" id="email2" name="email" required class="form2__input">
+                                    
+                                <label for="phone" class="form2__label">Telephone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+380 99 235 01 98" pattern="\+[0-9]{1,3}[0-9]{3}[0-9]{3}[0-9]{4}" required class="form2__input">
+                               
+                                <label for="event" class="form2__label">Choose event:</label>
+                                <select name="event" id="event" class="form2__select">
+                                    <option value="Hans Zimmer">Hans Zimmer Symphony</option>
+                                    <option value="YAKTAK">BEAUTY SUMMIT 2025 YAKTAK</option>
+                                    <option value="KADNAY">KADNAY</option>
+                                    <option value="Kids Fashion">Lviv Kids Fashion Show.</option>
+                                    <option value="Sinatra" selected>Sinatra. White Christmas</option>
+                                </select>
+
+                                <label for="date" class="form2__label">Select a date and time:</label>
+                                <input type="datetime-local" id="date" name="date" class="form2__input">
+                                    
+                                <input type="submit" value="Submit" class="form2__input form2__button">
+                                <input type="reset" value="Reset" class="form2__input form2__button">
+                            </form>
+                        </div>
+
+                        <div class="block__item block__item--three  item3">
+                            <h2 class="item3__title">Product card</h2>
+                            <form action="#" method="get" enctype="multipart/form-data" class="form3">
+                                <label for="name3" class="form3__label">Name:</label>
+                                <input type="text" id="name3" name="name" required   class="form3__input">
+                                    
+                                <label for="email3" class="form3__label">Email:</label>
+                                <input type="email" id="email3" name="email" required class="form3__input">
+                                    
+                                <label for="phone_3" class="form3__label">Telephone</label>
+                                <input type="tel" id="phone_3" name="phone" placeholder="+380 99 235 01 98" pattern="\+[0-9]{1,3}[0-9]{3}[0-9]{3}[0-9]{4}" required class="form3__input">
+                               
+                                <label for="product" class="form3__label">Choose category:</label>
+                                <select name="product" id="product" class="form3__select">
+                                    <option value="t-shirt">T-shirt</option>
+                                    <option value="jackets">Jackets</option>
+                                    <option value="sweaters" selected>Sweaters</option>
+                                    <option value="hats">Hats</option>
+                                    <option value="dresses">Dresses</option>
+                                </select>
+
+                                <div class="form3__radio-group">
+                                    <h2>Size:</h2>
+                                    <label for="size-S">S</label>
+                                    <input type="radio" id="size-S" name="size" value="S" checked>
+                                    <label for="size-M">M</label>
+                                    <input type="radio" id="size-M"  name="size" value="M">
+                                    <label for="size-L">L</label>
+                                    <input type="radio" id="size-L"  name="size" value="L">
+                                    <label for="size-XL">XL</label>
+                                    <input type="radio" id="size-XL"  name="size" value="XL">
+                                </div>
+                              
+                                <label for="message" class="form3__label">Message:</label>
+                                <textarea name="message" id="message" rows="10" cols="20" class="form3__textarea form3__input"></textarea>
+                                    
+                                <div class="form3__button-group">
+                                    <input type="submit" value="Submit" class="form3__input form3__button">
+                                    <input type="reset" value="Reset" class="form3__input form3__button">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>                
+        </main>
+        <footer>
+           <p> &copy; This website is the property of its owner S-O Olenka. All rights reserved.</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

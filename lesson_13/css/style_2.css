@@ -56,6 +56,9 @@ main>*{
     flex-wrap: wrap;
 }
 .card-block {
+    display: flex;
+    flex-direction: column;
+
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 440px;
@@ -78,13 +81,21 @@ main>*{
     justify-content: center;
     align-items: center;
     gap: 12px;
+
+    flex-grow: 1;
+
     padding-bottom: 10px;
+    padding-inline: 10px;
+}
+.card-block__content a {
+    flex-grow: 1;
 }
 .card-block__title {
     font-size: 16px;
     font-weight: 500;
     text-transform:uppercase;
     line-height: 20px;
+    text-align: center;
     transition: all 0.3s linear;
 }
 .card-block__title:hover{
@@ -122,7 +133,6 @@ main>*{
 .block-choose__item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 8px;
     flex:0 0 348px;

@@ -1,0 +1,134 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+
+body{
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    color:black;  
+}
+.wrapper > main{
+    flex-grow: 1;
+}
+.wrapper>*:not(:last-child){
+    margin-bottom: 80px;
+}
+[class*="__container"]{
+    max-width: 1422px;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+/* header */
+.header{
+    padding-top: 20px;
+}
+.header__inner{
+    display: flex;
+    gap: 80px;
+}
+
+.logo {
+}
+.logo__link {
+}
+.search-block {
+    display: inline-flex;
+    gap: 12px;
+    width: 262px;
+    height: 44px;
+    align-items: center;
+    /* padding-inline: 10px; */
+
+    border-bottom: 1px solid rgba(213, 213, 213, 1);
+}
+.search-block a{
+    display: flex;
+    align-items: center;
+}
+.search-block__icon {
+    width: 20px;
+    height: 20px;
+}
+.search-block__input {
+    border: none;
+    outline: none;
+}
+.search-block__input ::placeholder{
+    color: rgba(126, 127, 124, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+
+}
+.nav { 
+    display: flex;
+    justify-content: center;
+}
+.nav__list {
+    display: inline-flex;
+    gap: 44px;
+}
+.nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.nav__link {
+    color:  rgba(47, 48, 44, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active__block { 
+    display: flex;
+    justify-content: flex-end;
+    width: 322px;
+    gap: 44px;
+}
+.active__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active__like, .active__cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.active__icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.active__like p,
+.active__cart p{
+    color: rgba(47, 48, 44, 1);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+/* footer */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+footer p{
+    font-size: 20px;
+}

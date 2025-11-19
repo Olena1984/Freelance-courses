@@ -40,6 +40,9 @@ textarea{
 label{
     display: inline-block;
 }
+button{
+    background: transparent;
+}
 button,
 input[type="radio"],
 input[type="checkbox"] {

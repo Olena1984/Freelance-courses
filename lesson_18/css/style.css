@@ -210,6 +210,13 @@ main>*:not(:last-child){
      @media (width < 768px){
         .header{
             margin-bottom: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 5;
+            padding-top: 15px;
+            padding-bottom: 15px;   
         }
         /*=== burger-icon ====*/
 
@@ -279,6 +286,9 @@ main>*:not(:last-child){
         .menu-header__button {
             padding: 11px 47px;
             font-size: 17px;
+        }
+        .menu-header__link{
+            font-size: 20px;
         }
 
          /* ===== burger-click =========== */

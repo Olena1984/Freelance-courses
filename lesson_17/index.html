@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework_17 (Grid)</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="header">
+           <div class="header__container">
+              
+                    <div class="header__logo logo">
+                            <img src="images/logo.svg" alt="company logo Furnitur your future interior ">
+                    </div>
+                    <form action="#" class="header__search search-header">
+                        <button type="submit"> 
+                            <img src="images/search.svg" alt="search-icon"  class="search-header__icon">
+                        </button>
+                        <input type="search" class="search-header__input" placeholder="Search something">
+                    </form>
+                    <nav class="header__nav nav-header">
+                        <ul class="nav-header__list">
+                            <li class="nav-header__item">
+                                <a href="#" class="nav-header__link">HOME</a>
+                            </li>
+                            <li class="nav-header__item">
+                                <a href="#" class="nav-header__link">SHOP</a>
+                            </li>
+                            <li class="nav-header__item">
+                                <a href="#" class="nav-header__link">BLOG</a>
+                            </li>
+                            <li class="nav-header__item">
+                                <a href="#" class="nav-header__link">ABOUT US</a>
+                            </li>
+                        </ul>  
+                    </nav>
+                    <div class="action">
+                        <ul class="action__list">
+                           <li class="action__item" >
+                                <a href="#" class="action__like">
+                                    <img src="images/heart.svg" alt="heart-icon" class="action__icon">    
+                                    LOVE
+                                </a>
+                           </li>
+                            <li class="action__item">
+                                <a href="#" class="action__cart">
+                                    <img src="images/shopping-bag.svg" alt="cart-icon" class="action__icon">
+                                    CART   
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="burger-icon">
+                        <span></span>
+                    </button>
+            </div>
+        </header>
+        <main>
+            <!-- Hero section -->
+            <div class="hero">
+                    <img srcset="images/bg-hero2x.avif 2x, images/bg-hero3x.avif 3x"  src="images/bg-hero.avif" alt="a soft blue armchair on wooden legs, next to a wooden table with a flower on it and a floor lamp" class="hero__image" >
+                <div class="hero__container">
+                        <div class="hero__content">
+                            <p class="hero__uppertext">WELCOME TO OUR</p>
+                            <h1 class="hero__title">FUNITURE<br> 
+                                <span>GALLERY</span>
+                            </h1>
+                            <p class="hero__subtext">BROWSE OUR SELECTIONS</p>
+                            <p class="hero__description">Featuring sleek designs and innovative materials that seamlessly blend form and function.</p>
+                        </div>
+                </div>   
+            
+            </div>
+            <!-- Categories section -->
+            <div class="categories">
+                <div class="categories__container">
+                        <div class="categories__item item-categories">
+                                <img src="images/categories/lamp-dark.avif" alt="modern handing light" class="item-categories__image item-categories__image--lamp">
+                                <img src="images/categories/lamp-light.avif" alt="modern handing light" class="item-categories__image item-categories__image--lamp2">
+                            <div class="item-categories__body body-item body-item--lamp">
+                                <a href="#" > 
+                                    <h3 class="body-item__title">HANGING LIGHT</h3>
+                                </a>
+                                <p>Upgrade your space with our modern hanging light, featuring sleek lines, energy-efficient LED lighting, and adjustable height.</p>
+                                <a href="#" class="body-item__link">View more  <img src="images/icon/chevron-right.svg" alt="icon" ></a>
+                            </div>
+                        </div>
+    
+                        <div class="categories__item item-categories">
+                            <div class="item-categories__body body-item body-item--sofa">
+                                <a href="#">
+                                    <h3 class="body-item__title">DESIGNED SOFA</h3>
+                                </a>
+                                <p>Introducing our newest sofa, the perfect combination of style and comfort, designed to elevate your living space and provide ultimate relaxation.</p>
+                                <a href="#" class="body-item__link">View more  <img src="images/icon/chevron-right.svg" alt="icon" ></a>
+                            </div> 
+                                <img src="images/categories/sofa.avif" alt="modern green sofa with pillows" class=" item-categories__image item-categories__image--sofa">
+                        </div>
+    
+                        <div class="categories__item item-categories">
+                            <div class="item-categories__body body-item body-item--chair">
+                                <a href="#"> 
+                                    <h3 class="body-item__title">NOVA CHAIR</h3>
+                                </a>
+                                <p>a stylish and comfortable addition to any room, with its sleek design and plush cushions creating the ultimate seating experience.</p>
+                                <a href="#" class="body-item__link">View more <img src="images/icon/chevron-right.svg" alt="icon" ></a>
+                            </div>
+                                <img src="images/categories/chair.avif" alt="stylish and comfortable chair with wooden legs and a soft seat" class="item-categories__image  item-categories__image--chair">
+                        </div>
+                </div>
+            </div>
+            <!-- trust section -->
+            <div class="trust">
+                <div class="trust__container">
+                    <h2 class="trust__title trust__title--h2">TRUSTED BY</h2>
+                        <ul class="trust__list list-trust">
+                            <li>
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/lapsen-logo.png" alt="logo lapsen">
+                                </a>    
+                            </li>
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/crop-logo.png" alt="logo crop and highlight">
+                                </a>    
+                            </li>    
+                            <li>
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/n-logo.png" alt="logo N">
+                                </a>    
+                            </li> 
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/missy-logo.png" alt="logo missy">
+                                    </a>    
+                            </li> 
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/peppermint-logo.png" alt="logo peppermint">
+                                    </a>    
+                            </li>  
+                            <li>
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/pixie-logo.png" alt="logo pixie labs">
+                                </a>    
+                            </li>
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/n-logo.png" alt="logo N">
+                                </a>    
+                            </li>
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/pixie-logo.png" alt="logo pixie labs">
+                                    </a>    
+                            </li>    
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/peppermint-logo.png" alt="logo peppermint">
+                                </a>    
+                            </li>
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/missy-logo.png" alt="logo missy">
+                                </a>    
+                            </li>
+                            <li >
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/lapsen-logo.png" alt="logo lapsen">
+                                    </a>    
+                            </li>
+                            <li>
+                                <a href="#" class="list-trust__link">
+                                    <img src="images/trust/crop-logo.png" alt="logo crop and highlight">
+                                </a>    
+                            </li>
+                        </ul>
+                </div>
+            </div>
+             <!-- product section -->
+            <div class="product">
+                <div class="product__container">
+                    <h2 class="product__title product__title--h2">FEATURED PRODUCTS</h2>
+                    <ul class="product__menu menu-product">
+                        <li>
+                           <a href="#" class="menu-product__link">ALL</a> 
+                        </li>
+                        <li>
+                            <a href="#" class="menu-product__link">ON SALE</a> 
+                        </li>
+                         <li> 
+                            <a href="#" class="menu-product__link">SOFA</a>
+                        </li>
+                        <li> 
+                            <a href="#" class="menu-product__link">HANGING LIGHT</a>
+                        </li> 
+                    </ul>
+                    <!-- product chair -->
+                    <div class="product__items">
+                        <a href="#" class="product__card card-product">
+                            <div class="card-product__image">
+                                <img src="images/product/chair-img.avif" alt="high chair with black seat and brown legs">
+                            </div>
+                            <div class="card-product__body">
+                                <h4 class="card-product__title">URBAN LUX HIGH CHAIR</h4>
+                                <div class="card-product__rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                </div>
+                                <p class="card-product__price">$2668.15</p>
+                            </div>
+                        </a>
+                        <!-- product lamp -->
+                        <a href="#" class="product__card card-product">
+                            <div class="card-product__image">
+                                <img src="images/product/hanging-img.avif" alt="modern black hanging lamp with a lampshade in the form of triangles">
+                            </div>
+                            <div class="card-product__body">
+                                <h4 class="card-product__title">MORDERN BLACK HANGING LIGHT</h4>
+                                <div class="card-product__rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                </div>
+                                <p class="card-product__price">$1595.6</p>
+                            </div>
+                        </a>
+                        <!-- product table -->
+                        <a href="#" class="product__card card-product">
+                            <div class="card-product__image">
+                                <img src="images/product/table-img.avif" alt="a modern black table with rounded corners and thin legs">
+                            </div>
+                            <div class="card-product__body">
+                                <h4 class="card-product__title">METRO FUSION TABLE </h4>
+                                <div class="card-product__rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                </div>
+                                <p class="card-product__price">$2238.30</p>
+                            </div>
+                        </a>
+                        <!-- product desk lamp -->
+                        <a href="#" class="product__card card-product">
+                            <div class="card-product__image">
+                                <img src="images/product/desk-lamp-img.avif" alt="gray lumin desk lamp">
+                            </div>
+                            <div class="card-product__body">
+                                <h4 class="card-product__title">LUMIN DESK LAMP</h4>
+                                <div class="card-product__rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                </div>
+                                <p class="card-product__price">$1477.80</p>
+                            </div>
+                        </a>
+                        <!-- product clock -->
+                        <a href="#" class="product__card card-product">
+                            <div class="card-product__image">
+                                <img src="images/product/hangign-clock-img.avif" alt="round hanging clock with black frame and white background and large numbers">
+                            </div>
+                            <div class="card-product__body">
+                                <h4 class="card-product__title">TIMELESS EDGE HANGING CLOCK</h4>
+                                <div class="card-product__rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                </div>
+                                <p class="card-product__price">$1071.6</p>
+                            </div>
+                        </a>
+                        <!-- product lamp -->
+                        <a href="#" class="product__card card-product">
+                            <div class="card-product__image">
+                                <img src="images/product/hanging-lamp-img.avif" alt="pendant light-colored lamp">
+                            </div>
+                            <div class="card-product__body">
+                                <h4 class="card-product__title">ZENITH PENDANT LIGHT</h4>
+                                <div class="card-product__rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                    <img src="images/icon/star.svg" alt="icon star rating">
+                                </div>
+                                <p class="card-product__price">$2069.59</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- choose section -->
+             <div class="choose">
+                <div class="choose__container">
+                    <h2 class="choose__title choose__title--h2">WHY CHOOSE US?</h2>
+                    <div class="choose__items">
+                        <div class="choose__item item-choose">
+                            <a href="#" class="item-choose__link" > 
+                                <img src="images/icon/icon-planet-earth.svg" alt="icon icon planet earth">
+                            </a>
+                            <a href="#" class="item-choose__link">
+                                <h4>GLOBAL DELIVERY</h4>
+                            </a>
+                            <p>
+                                Experience Hassle-Free Shipping and Seamless Global Connectivity with Our Trustworthy and Efficient Delivery Service, Bringing the World to Your Fingertips!
+                            </p>
+                        </div>
+                        <div class="choose__item item-choose">
+                            <a href="#" class="item-choose__link">
+                                <img src="images/icon/icon-package-box.svg" alt="icon icon package box">
+                            </a>
+                            <a href="#" class="item-choose__link"> 
+                                <h4>FREE SHIPPING</h4>
+                            </a>
+                            <p>
+                               Shop to Your Heart's Content Without Worrying About Shipping Costs: Our Free Shipping Service Delivers Your Purchases with a Smile, Straight to Your Doorstep!
+                            </p>
+                        </div>
+                        <div class="choose__item item-choose">
+                            <a href="#" class="item-choose__link">
+                                <img src="images/icon/icon-phone.svg" alt="icon icon phone">
+                            </a>
+                            <a href="#" class="item-choose__link">
+                                <h4>24/7 SUPPORTING</h4>
+                            </a>
+                            <p>
+                               Shop with Confidence Anytime, Anywhere: Our Free Shipping Service Comes with 24/7 Support to Ensure Your Packages Arrive Safely and On Time!
+                            </p>
+                        </div>
+                        <div class="choose__item item-choose">
+                            <a href="#" class="item-choose__link">
+                                <img src="images/icon/icon-email.svg" alt="icon email">
+                            </a>
+                            <a href="#" class="item-choose__link"> 
+                                <h4>DAILY EMAIL</h4>
+                            </a>
+                            <p>
+                               Stay Up-to-Date with Your Deliveries: Enjoy the Convenience of Daily Email Updates with Our Free Shipping Service, Making Your Online Shopping Experience Even More Enjoyable!
+                            </p>
+                        </div>
+                        <div class="choose__item item-choose">
+                            <a href="#" class="item-choose__link"> 
+                                <img src="images/icon/icon-credit-card.svg" alt="icon credit card ">
+                            </a>
+                            <a href="#" class="item-choose__link"> 
+                                <h4>EASY PAYMENT</h4>
+                            </a>
+                            <p>
+                               Shop and Pay with Ease: Our Free Shipping Service Not Only Delivers Your Packages for Free, but Also Offers Easy Payment Options, Making Your Shopping Experience a Breeze!
+                            </p>
+                        </div>
+                         <div class="choose__item item-choose">
+                            <a href="#" class="item-choose__link">
+                                <img src="images/icon/icon-badge.svg" alt="icon badge">
+                            </a>
+                            <a href="#" class="item-choose__link">
+                                <h4>MONTHLY  VOUCHER</h4>
+                            </a>
+                            <p>
+                               More Than Just Free Shipping: Our Service Rewards Your Loyalty with Monthly Vouchers, Giving You More Reasons to Shop and Save on Your Favorite Products!
+                            </p>
+                        </div>
+                   </div>
+                </div>
+             </div>
+        </main>
+        <footer>
+           <p> &copy; This website is the property of its owner S-O Olenka. All rights reserved.</p>
+        </footer>
+    </div>
+   <script src="js/script.js"></script>
+</body>
+</html>

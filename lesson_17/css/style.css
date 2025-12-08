@@ -192,7 +192,13 @@ body{
     }
     @media (width < 768px){
         /*=== burger-icon ====*/
-
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
         .burger-icon{
             display: block;
             width: 30px;
@@ -265,7 +271,9 @@ body{
         .search-header{
             flex-grow: 1;
         }
-
+        .nav-header__link{
+            font-size: 20px;
+        }
 
          /* ===== burger-click =========== */
         [data-nav-header-open] .burger-icon span {

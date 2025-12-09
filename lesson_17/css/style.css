@@ -192,13 +192,7 @@ body{
     }
     @media (width < 768px){
         /*=== burger-icon ====*/
-        .header{
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
+        
         .burger-icon{
             display: block;
             width: 30px;
@@ -292,6 +286,13 @@ body{
         [data-nav-header-open] .nav-header,
         [data-nav-header-open] .nav-header::before {
             left: 0;
+        }
+        [data-nav-header-open] .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
         }
     }
     @media (width < 480px){

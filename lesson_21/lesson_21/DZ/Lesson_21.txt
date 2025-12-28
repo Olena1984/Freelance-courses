@@ -1,0 +1,21 @@
+Задача №1
+Яка назва змінної вірна
+1) let user-name
+2) let UserName
+3) let userName
+
+Задача №2
+Чи буде помилка при виконанні наступної програми
+const userName = 20
+userName = "Іштван"
+
+Задача №3
+Що потрапить в консоль?
+let numOne = 20
+let numTwo = "20"
+
+let numSumm = numOne + numTwo
+console.log(numSumm)
+
+
+

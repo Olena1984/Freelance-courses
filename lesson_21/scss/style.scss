@@ -1,0 +1,16 @@
+@import "reset.scss";
+@import "fonts.scss";
+
+/
+/*===== footer =====*/
+footer {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.9375rem;
+    margin-top: 0.9375rem;
+}
+footer p {
+    font-size: 1.25rem;
+}

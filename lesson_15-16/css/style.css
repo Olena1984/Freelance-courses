@@ -25,9 +25,6 @@ body{
     margin: 0 auto;
     padding-inline: 15px;
 }
-main>*{
-    margin-bottom: 100px;
-}
 /*============= header ==================== */
 .header{   
     background-color: #ffff;
@@ -190,13 +187,13 @@ main>*{
     }
     @media (width < 768px){
         /*=== burger-icon ====*/
-
+        .header{
+           
+        }
         .burger-icon{
             display: block;
             width: 30px;
             height: 18px;
-            /* position: relative;
-            z-index: 1; */
         }
         .burger-icon span,
         .burger-icon::before,
@@ -263,6 +260,9 @@ main>*{
         .search-header{
             flex-grow: 1;
         }
+        .nav-header__link{
+            font-size: 20px;
+        }
 
 
          /* ===== burger-click =========== */
@@ -283,12 +283,21 @@ main>*{
         [data-nav-header-open] .nav-header::before {
             left: 0;
         }
+         [data-nav-header-open] .header{
+             position: fixed;
+            top : 0;
+            left: 0;    
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+         }
     }
     @media (width < 480px){
         
         .header__container{
             gap: 15px;
             min-height: 70px;
+           
         }
         .logo{
             width: 30px;
@@ -448,22 +457,32 @@ main>*{
     }
     .hero__description{
         max-width: 200px;
-        height: 40px;
-        overflow: auto;
+        font-size: 14px;
+        background: transparent; 
+        backdrop-filter: blur(2px);
+        color:  rgb(53, 54, 54);
     }
     .hero__content{
        margin-left: auto;
-      
     }
     
 }
 @media (width < 480px){
     .hero{
         background-position: -55px;
-        padding:  15px;
+        /* padding:  20px; */
+    }
+    .hero__image{
+      /* opacity: 0.8; */
+        /* filter: brightness(0.9); */
     }
     .hero__container{
-        margin-left: 38%;
+        margin-left: 20%;
+    }
+    .hero__content{
+        justify-content: center;
+        align-items: center;
+       position: relative;
     }
     .hero__title{
         font-size: 30px;
@@ -474,7 +493,8 @@ main>*{
         font-size: 14px;
     }
     .hero__description{
-        display: none;
+        /* color:  rgb(35, 36, 35); */
+    
     }
     .hero img{
         object-position: 0px 0px;

@@ -305,11 +305,14 @@ main>*:not(:last-child){
             left: 0;
         } 
         [data-menu-header-open] .header{
-            position: fixed;
+            position: sticky;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 5;
+            z-index: 5; 
+        }
+        [data-menu-header-open] body {
+            overflow: hidden;
         }
     }
     
@@ -437,6 +440,10 @@ main>*:not(:last-child){
     .hero__image{
         flex: 1 1 50%;
     }
+    .hero__title{
+        font-size: 35px;
+    
+    }
 }
 @media (width <= 930px){
     .hero__title{
@@ -495,6 +502,7 @@ main>*:not(:last-child){
     }
      .hero__image img{
         object-fit: cover;
+        width: 100vw;
     }
 }
 @media (width < 480px){
@@ -526,8 +534,7 @@ main>*:not(:last-child){
 .practice__content {
     display: flex;
     flex-direction: column;
-    padding-top: 63px;
-    padding-bottom: 43px;
+    align-self: center;
     flex: 1 1 47%;
 }
 .practice__title {
@@ -592,26 +599,25 @@ main>*:not(:last-child){
     .practice__container {
         column-gap: 25px;
     }
-    .practice__content{
-        padding-top: 58px;
-        padding-bottom: 43px;
+    .practice__content >*:not(:last-child){
+        margin-bottom: 20px;
+
+    }
+    .practice__text--subtext{
+        font-size: 14px;
+    }
+    [class*="__text"]{
+        font-size: 14px;
     }
 }
 @media (width <= 992px){
-     .practice__content{
-        padding-top: 43px;
-        padding-bottom: 43px;
-    }
+     
 }
 @media (width <= 930px){
     .practice__content{
         flex: 1 1 45%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    .practice__text{
-       height: 100px;
-       overflow: auto;
+        /* padding-top: 15px;
+        padding-bottom: 15px; */
     }
     .practice__image {
         flex: 1 1 55%;
@@ -621,8 +627,12 @@ main>*:not(:last-child){
         object-fit: contain;
     }
     .practice__content>*:not(:last-child){
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
+    [class*="__title--2"]{
+        font-size: 30px;
+    }
+
 }
 @media (width < 768px){
     .practice__container {
@@ -652,6 +662,7 @@ main>*:not(:last-child){
     }
     .practice__image img{
         object-fit: cover;
+        width: 100vw;
     }
 }
 
@@ -773,19 +784,26 @@ main>*:not(:last-child){
     flex-direction: column;
     justify-content: center;
     margin-bottom: 41px;
+    
 }
 .schedule__title {
     margin-bottom: 16px;
 }
-/* .schedule__text {
-   max-width: 839px;
-} */
 .schedule__timetable {
     display: flex;
     column-gap: 34px;
 }
+.timetable__content{
+    overflow-x: auto;
+    display: block;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+   margin-block: auto;
+}
+
 .timetable__block {
-    width: 663px;
+    width: 100%;
+    min-width: 600px;
     margin: auto 0;
     border-collapse:collapse;
 
@@ -794,6 +812,7 @@ main>*:not(:last-child){
     width: 15px; 
     height: 15px;
     vertical-align: baseline;
+    transition: all 0.3s;
 }
 .timetable__item {
     max-width: 657px;
@@ -820,6 +839,10 @@ main>*:not(:last-child){
 .timetable__event{
     padding-left: 45px;
 }
+.timetable__icon:hover{
+    scale: 1.2;
+    
+}
 .timetable__time {
     text-align: right;
 }
@@ -844,55 +867,50 @@ main>*:not(:last-child){
     }
 } 
 @media (width <= 1030px){
-    .schedule__timetable {
+    
+    /* .timetable__block {
+        width: 90%;
+        margin: auto;  
+    } */
+    .timetable__image img{
+        width: 100%;
+        
+    }
+}
+@media (width <= 935px){
+     .schedule__timetable {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         row-gap: 34px;
         column-gap: 0;
-    }
-    .timetable__block {
-        width: 90%;
-        margin: auto;  
-    }
+     }  
     .timetable__image img{
+        width: 100vw;  
+    }
+    .timetable__content{
         width: 100%;
-        
     }
 }
 @media (width < 768px){
-    
-    .timetable__block {
-        width: 90%;
-        margin: auto;  
-    }
     .timetable__time {
         text-align: center;
     }
-    .timetable__item {
-        width: 100%;
-    } 
+    
+    
 }
 @media (width < 700px){
-    table, tr, td, tbody{
-        display:block;
-        text-align: center;
-    }
-    .timetable__item td{
-       padding: 10px 0 10px 0;
-    }
+  
 }
 
 /*===== footer =====*/
-footer{
+.footer__container{
     font-family: "Montserrat", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 15px;
     margin-top: 15px;
-}
-footer p{
     font-size: 20px;
 }

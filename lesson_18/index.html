@@ -41,7 +41,7 @@
                         <a href="#" class="menu-header__button">Sing Up</a>
                     </nav>
                    
-                <button class="burger-icon">
+                <button type="button" aria-label="Toggle menu" class="burger-icon">
                     <span></span>
                 </button>
             </div>
@@ -50,7 +50,7 @@
             <!-- hero section -->
             <section class="hero">
                 <div class="hero__container">
-                    <article class="hero__content">
+                    <div class="hero__content">
                         <h1 class="hero__title">"Uniting the Body, Mind, and Spirit Through the Practice of Yoga"</h1>
                         <p class="hero__text">
                             Yoga is a multifaceted discipline that encompasses physical, mental, and spiritual aspects. It is based on the concept of the interconnectedness of body, mind, and spirit, and aims to promote balance and harmony within oneself and with the world around us.
@@ -59,7 +59,7 @@
                             <img src="images/section-1/btn-circle.svg" alt="button in the form of a large circle and inside a smaller circle">
                             <span>Read More</span>
                         </a>
-                    </article>
+                    </div>
                     <figure  class="hero__image">
                         <img srcset="images/section-1/image-1-2x.avif 2x, images/section-1/image-1-3x.avif 3x" src="images/section-1/image-1.avif" alt="a woman in a yoga pose one foot forward, and the other backward" >
                     </figure>
@@ -73,7 +73,7 @@
                     <figure class="practice__image"> 
                         <img srcset="images/section-2/image-2-2x.avif 2x, images/section-2/image-2-3x.avif 3x" src="images/section-2/image-2-1x.avif" alt="a pose in yoga when a person sits on the floor with his legs crossed in front of him, with a straight back and hands lying with his palms up or down on his knees.">
                     </figure>
-                    <article class="practice__content">
+                    <div class="practice__content">
                         <h2 class="practice__title practice__title--2">
                             Practice Anytime, Anywhere with our Online Classes
                         </h2>
@@ -85,7 +85,7 @@
                            <span> First lesson - free!</span>
                         </p>
                         <a href="#" class="practice__button">Trial Lession</a>
-                    </article>
+                    </div>
                     <figure class="practice__bg-image">
                         <img src="images/section-1/flower.avif" alt="pink flower" >
                     </figure>
@@ -94,7 +94,7 @@
            </section>
            <!-- lesson section -->
             <section class="yoga-lesson">
-                <article class="yoga-lesson__container">
+                <div class="yoga-lesson__container">
                     <div class="yoga-lesson__content">
                         <h2 class="yoga-lesson__title yoga-lesson__title--2">Our lessons</h2>
                         <p class="yoga-lesson__text">
@@ -129,7 +129,7 @@
                                 </figcaption>
                             </figure>
                     </div>
-                </article>
+                </div>
 
             </section>
             <!-- schedule  section-->
@@ -137,7 +137,7 @@
                 <figure class="schedule__bg-image">
                     <img src="images/section-1/flower.avif" alt="pink flower">
                 </figure>
-                <article class="schedule__container">
+                <div class="schedule__container">
                     <div class="schedule__content">
                         <h2 class="schedule__title schedule__title--2">
                             Join to our class, see our <br> schedule
@@ -147,69 +147,85 @@
                         </p>
                     </div>
                     <div class="schedule__timetable timetable">
-                        <table class="timetable__block">
-                            <tbody class="timetable__body">
-                                <tr class="timetable__item timetable__item--monday">
-                                   <td class="timetable__day">Mondays</td>
-                                   <td class="timetable__event">Hot Power Flow 
-                                            <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
-                                   </td>
-                                   <td class="timetable__time"><time datetime="19:30">7:30 PM</time> - <time datetime="20:45">8:45 PM</time></td>
-                                </tr>
-                                <tr class="timetable__item timetable__item--tuesday">
-                                    <td class="timetable__day">Tuesday</td>
-                                    <td class="timetable__event">Hot PowerFlow vinyasa 
-                                        <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
-                                    </td>
-                                    <td class="timetable__time"><time datetime="08:20">8:20 AM</time> - <time datetime="09:20">9:20 AM</time></td>
-                                </tr>
-                                <tr class="timetable__item timetable__item--wednesday">
-                                    <td class="timetable__day">Wednesday</td>
-                                    <td class="timetable__event">Warm mindful flow  
-                                        <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
-                                    </td>
-                                    <td class="timetable__time"><time datetime="16:15">4:15 PM</time> - <time datetime="17:45">5:45 PM</time></td>
-                                </tr>
-                                <tr class="timetable__item timetable__item--thursday">
-                                    <td class="timetable__day">Thursday</td>
-                                    <td class="timetable__event">Kundalini yoga  
-                                        <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
-                                    </td>
-                                    <td class="timetable__time"><time datetime="15:30">3:30 PM</time> - <time datetime="16:45">4:45 PM</time></td>
-                                </tr>
-                                <tr class="timetable__item timetable__item--friday">
-                                    <td class="timetable__day">Friday</td>
-                                    <td class="timetable__event">Warm yin yoga  
-                                        <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
-                                    </td>
-                                    <td class="timetable__time"><time datetime="14:00">2:00 PM</time> - <time datetime="15:15">3:15 PM</time></td>
-                                </tr>
-                                <tr class="timetable__item timetable__item--saturday">
-                                    <td class="timetable__day">Saturday</td>
-                                    <td class="timetable__event">jzt dance and yoga  
-                                        <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
-                                    </td>
-                                    <td class="timetable__time"><time datetime="10:00">10:00 AM</time> - <time datetime="11:45">11:45 AM</time></td>
-                                </tr>
-                                <tr class="timetable__item timetable__item--sunday">
-                                    <td class="timetable__day">Sunday</td>
-                                    <td class="timetable__event">Hanta yoga  
-                                        <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
-                                    </td>
-                                    <td class="timetable__time"><time datetime="18:30">6:30 PM</time> - <time datetime="19:30">7:30 PM</time></td>
-                                </tr>
-                            </tbody> 
-                        </table>
+                       <div class="timetable__content">
+                            <table class="timetable__block">
+                                <tbody class="timetable__body">
+                                    <tr class="timetable__item timetable__item--monday">
+                                       <td class="timetable__day">Mondays</td>
+                                       <td class="timetable__event">Hot Power Flow 
+                                            <a href="#" class="timetable__link">  
+                                                <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
+                                            </a>
+                                       </td>
+                                       <td class="timetable__time"><time datetime="19:30">7:30 PM</time> - <time datetime="20:45">8:45 PM</time></td>
+                                    </tr>
+                                    <tr class="timetable__item timetable__item--tuesday">
+                                        <td class="timetable__day">Tuesday</td>
+                                        <td class="timetable__event">Hot PowerFlow vinyasa 
+                                           <a href="#" class="timetable__link"> 
+                                                <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
+                                            </a>
+                                        </td>
+                                        <td class="timetable__time"><time datetime="08:20">8:20 AM</time> - <time datetime="09:20">9:20 AM</time></td>
+                                    </tr>
+                                    <tr class="timetable__item timetable__item--wednesday">
+                                        <td class="timetable__day">Wednesday</td>
+                                        <td class="timetable__event">Warm mindful flow  
+                                            <a href="#" class="timetable__link">
+                                                <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
+                                            </a>
+                                        </td>
+                                        <td class="timetable__time"><time datetime="16:15">4:15 PM</time> - <time datetime="17:45">5:45 PM</time></td>
+                                    </tr>
+                                    <tr class="timetable__item timetable__item--thursday">
+                                        <td class="timetable__day">Thursday</td>
+                                        <td class="timetable__event">Kundalini yoga  
+                                           <a href="#" class="timetable__link"> 
+                                                <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
+                                            </a>
+                                        </td>
+                                        <td class="timetable__time"><time datetime="15:30">3:30 PM</time> - <time datetime="16:45">4:45 PM</time></td>
+                                    </tr>
+                                    <tr class="timetable__item timetable__item--friday">
+                                        <td class="timetable__day">Friday</td>
+                                        <td class="timetable__event">Warm yin yoga  
+                                            <a href="#" class="timetable__link">
+                                                <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
+                                            </a>
+                                        </td>
+                                        <td class="timetable__time"><time datetime="14:00">2:00 PM</time> - <time datetime="15:15">3:15 PM</time></td>
+                                    </tr>
+                                    <tr class="timetable__item timetable__item--saturday">
+                                        <td class="timetable__day">Saturday</td>
+                                        <td class="timetable__event">jzt dance and yoga  
+                                            <a href="#" class="timetable__link"> 
+                                                <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
+                                            </a>
+                                        </td>
+                                        <td class="timetable__time"><time datetime="10:00">10:00 AM</time> - <time datetime="11:45">11:45 AM</time></td>
+                                    </tr>
+                                    <tr class="timetable__item timetable__item--sunday">
+                                        <td class="timetable__day">Sunday</td>
+                                        <td class="timetable__event">Hanta yoga  
+                                            <a href="#" class="timetable__link">
+                                                <img src="images/icons/up-right-arrow.webp" alt="icon up-right-arrow" class="timetable__icon">
+                                            </a>
+                                        </td>
+                                        <td class="timetable__time"><time datetime="18:30">6:30 PM</time> - <time datetime="19:30">7:30 PM</time></td>
+                                    </tr>
+                                </tbody> 
+                            </table>
+                       </div>
                        
                         <figure class="timetable__image">
                             <img srcset="images/section-4/image-4-2x.avif 2x, images/section-4/image-4-3x.avif 3x" src="images/section-4/image-4-1x.avif" alt="three women are sitting on the floor">
                         </figure>
                     </div>
-                </article>
+                </div>
             </section>
         </main>
         <footer>
-           <p> &copy; This website is the property of its owner S-O Olenka. All rights reserved.</p>
+           <p class="footer__container"> &copy; This website is the property of its owner S-O Olenka. All rights reserved.</p>
         </footer>
     </div>
    <script src="js/script.js"></script>

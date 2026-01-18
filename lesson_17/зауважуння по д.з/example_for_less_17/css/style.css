@@ -1,0 +1,302 @@
+@import url("reset.css");
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  overflow: clip;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 1422px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  padding: 30px 0;
+
+  text-align: center;
+
+  background-color: rgb(224, 224, 224);
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+/*======================================================*/
+/* ! стилі для секції */
+.promo-products {
+  padding: 50px 0px;
+}
+
+.promo-products__container {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+
+@media (width >= 1422px) {
+  .promo-products__container {
+    gap: 36px;
+  }
+}
+
+@media (width >= 1120px) {
+  .promo-products__container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width < 1120px) and (width >= 640px) {
+  .promo-products__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*======================================================*/
+/* ! стилі для карток */
+.promo-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 22px 0;
+  grid-column: span 1;
+
+  background-color: #f7f7f7;
+  overflow: hidden;
+}
+
+@media (width >= 1120px) {
+  .promo-card {
+    min-height: 584px;
+    padding: 48px 32px 0;
+  }
+}
+
+/* ? модифікації для картки */
+.promo-card--accent {
+  background-color: #e6efea;
+}
+
+.promo-card--reverse {
+  flex-direction: column-reverse;
+  padding-top: 0px;
+  padding-bottom: 64px;
+}
+
+.promo-card--big {
+  padding-bottom: 32px;
+}
+
+@media (width >= 640px) {
+  .promo-card--big {
+    grid-column: span 2;
+  }
+}
+
+@media (width >= 1120px) {
+  .promo-card--big {
+    padding-bottom: 50px;
+  }
+}
+
+@media (width < 1120px) and (width >= 640px) {
+  .promo-card:nth-child(3n + 1) {
+    order: 1;
+  }
+
+  .promo-card:nth-child(3n + 3) {
+    order: 2;
+  }
+
+  .promo-card--big {
+    grid-column: 1 / -1;
+  }
+
+  .promo-card--big:nth-child(3n + 2) {
+    order: 3;
+  }
+}
+/*======================================================*/
+
+/* ! стилі для медіа-контенту картки */
+.promo-card__media {
+  transform: translateX(22px);
+
+  width: 100%;
+  max-width: 263px;
+  align-self: flex-end;
+}
+
+@media (width >= 1120px) {
+  .promo-card__media {
+    transform: translateX(32px);
+  }
+}
+
+/* ? модифікації */
+.promo-card--reverse .promo-card__media {
+  transform: none;
+
+  max-width: 209px;
+  aspect-ratio: 209 / 194;
+}
+
+.promo-card--big .promo-card__media {
+  transform: none;
+
+  max-width: 529px;
+  width: 100%;
+
+  align-self: center;
+}
+/*======================================================*/
+
+/* ! стилі для картинки */
+.promo-card__media img {
+  width: 100%;
+  aspect-ratio: 263/250;
+
+  object-fit: contain;
+}
+
+/* ? модифікації */
+.promo-card--big .promo-card__media img {
+  aspect-ratio: 529 / 218;
+}
+/*======================================================*/
+
+/* ! Стилі для тіла контенту картки */
+.promo-card__body {
+  position: relative;
+  z-index: 3;
+
+  flex-grow: 1;
+
+  color: #7e7f7c;
+  line-height: 1.25;
+}
+
+/* ? модифікації */
+.promo-card--reverse .promo-card__body {
+  flex-grow: 0;
+}
+
+.promo-card--big .promo-card__body {
+  text-align: center;
+  max-width: 310px;
+  margin-inline: auto;
+}
+
+.promo-card__body > *:not(:last-child) {
+  margin-bottom: 24px;
+}
+/*======================================================*/
+
+/* внутрішні елементи */
+.promo-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #2f302c;
+}
+
+.promo-card__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+/*======================================================*/
+
+/* ! стилі для посилання */
+.promo-card__link {
+  position: relative;
+
+  padding-right: 20px;
+
+  outline: none;
+
+  transition: color 0.3s ease;
+}
+
+.promo-card__link::after {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+
+  background: url(../img/icons/arrow_right.svg) center / contain no-repeat;
+
+  transition: transform 0.3s ease;
+
+  content: "";
+}
+
+.promo-card__link span {
+  position: relative;
+
+  display: inline-block;
+}
+
+.promo-card__link span::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+
+  width: 100%;
+  height: 1px;
+
+  background-color: #3f5656;
+  transform-origin: bottom right;
+  pointer-events: none;
+
+  transition: transform 0.3s ease;
+
+  content: "";
+}
+
+/* ? стилі для ховера */
+@media (any-hover: hover), (pointer: fine) {
+  .promo-card__link:hover {
+    color: #000000;
+  }
+
+  .promo-card__link:hover:after {
+    transform: translateX(30%);
+  }
+
+  .promo-card__link:hover span::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+/* ? стилі для фокусу при навігації за допомогою tab */
+.promo-card__link:focus-visible {
+  color: #3f5656;
+}
+
+.promo-card__link:focus-visible:after {
+  transform: translateX(30%);
+}
+
+.promo-card__link:focus-visible span::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

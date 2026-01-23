@@ -429,6 +429,7 @@ html:not([data-fls-touch]) .item__link-title:hover {
 }
 .search-header__input {
   height: 2.75rem;
+  padding-left: 0.3125rem;
 }
 @media (width > 23.125em) {
   .search-header__input {
@@ -466,76 +467,8 @@ html:not([data-fls-touch]) .item__link-title:hover {
   opacity: 0;
 }
 @media (width < 21.25em) {
-  .search-header__input[type=search] {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .search-header__input[type=search]::-webkit-input-placeholder {
-    text-overflow: ellipsis;
-  }
-  .search-header__input[type=search]::-moz-placeholder {
-    text-overflow: ellipsis;
-  }
-  .search-header__input[type=search]:-ms-input-placeholder {
-    text-overflow: ellipsis;
-  }
-  .search-header__input[type=search]::-ms-input-placeholder {
-    text-overflow: ellipsis;
-  }
-  .search-header__input[type=search]::placeholder {
-    text-overflow: ellipsis;
-  }
-}
-@media (width < 21.25em) and (min-width: 21.25em) {
-  .search-header__input[type=search]::-webkit-input-placeholder {
-    font-size: 16px;
-  }
-  .search-header__input[type=search]::-moz-placeholder {
-    font-size: 16px;
-  }
-  .search-header__input[type=search]:-ms-input-placeholder {
-    font-size: 16px;
-  }
-  .search-header__input[type=search]::-ms-input-placeholder {
-    font-size: 16px;
-  }
-  .search-header__input[type=search]::placeholder {
-    font-size: 16px;
-  }
-}
-@media (width < 21.25em) and (min-width: 20em) and (max-width: 21.25em) {
-  .search-header__input[type=search]::-webkit-input-placeholder {
-    font-size: clamp( 14px , -18px  +  10vw , 16px );
-  }
-  .search-header__input[type=search]::-moz-placeholder {
-    font-size: clamp( 14px , -18px  +  10vw , 16px );
-  }
-  .search-header__input[type=search]:-ms-input-placeholder {
-    font-size: clamp( 14px , -18px  +  10vw , 16px );
-  }
-  .search-header__input[type=search]::-ms-input-placeholder {
-    font-size: clamp( 14px , -18px  +  10vw , 16px );
-  }
-  .search-header__input[type=search]::placeholder {
-    font-size: clamp( 14px , -18px  +  10vw , 16px );
-  }
-}
-@media (width < 21.25em) and (max-width: 20em) {
-  .search-header__input[type=search]::-webkit-input-placeholder {
-    font-size: 14px;
-  }
-  .search-header__input[type=search]::-moz-placeholder {
-    font-size: 14px;
-  }
-  .search-header__input[type=search]:-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .search-header__input[type=search]::-ms-input-placeholder {
-    font-size: 14px;
-  }
-  .search-header__input[type=search]::placeholder {
-    font-size: 14px;
+  .search-header__input::-webkit-search-decoration, .search-header__input::-webkit-search-cancel-button, .search-header__input::-webkit-search-results-button, .search-header__input::-webkit-search-results-decoration {
+    display: none;
   }
 }
 

@@ -73,6 +73,7 @@
     // .search-header__input
     &__input {
         height: toRem(44);
+        padding-left: toRem(5);
         @media (width > toEm(370)) {
             padding-left: toRem(32);
         }
@@ -87,15 +88,23 @@
         //  Адаптація placeholder для малих екранів
 
         @media (width < toEm(340)) {
-            &[type="search"] {
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
-            &[type="search"]::placeholder {
-                @include adaptiveValue("font-size", 16, 14, 0, 340, 320);
-                text-overflow: ellipsis;
-            }
+            // &[type="search"] {
+            //     white-space: nowrap;
+            //     overflow: hidden;
+            //     text-overflow: ellipsis;
+                
+            // }
+            // &[type="search"]::placeholder {
+            //     @include adaptiveValue("font-size", 16, 13, 0, 340, 320);
+            //     text-overflow: ellipsis;
+            // }
+            &::-webkit-search-decoration,
+			&::-webkit-search-cancel-button,
+			&::-webkit-search-results-button,
+			&::-webkit-search-results-decoration {
+				display: none;
+			}
+            
         }
     }
 }

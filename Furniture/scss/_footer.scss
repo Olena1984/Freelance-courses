@@ -1,6 +1,5 @@
 @use "_typo.scss" as *;
 @use "_mixins.scss" as *;
-@use "_components" as *;
 
 .footer {
     // .footer__container
@@ -39,19 +38,16 @@
         @include typo("h2-20");
         font-weight: 700;
         color: var(--black-1);
-        // &:not(:last-child) {
-        //     @include adaptiveValue("margin-bottom", 28, 15);
-        // }
+        &[data-footer-menu-open] + .content-footer__list {
+            @include adaptiveValue("margin-top", 28, 15);
+        }
     }
     // .content-footer__list
     &__list {
-       
-            @include adaptiveValue("margin-top", 28, 15);
-
         overflow: hidden;
-        transition: all 0.4s;
-        @media (width <= toEm(595)) {
-            // height: 0;
+        transition: all 0.5s;
+        @media (width > toEm(595)) {
+            @include adaptiveValue("margin-top", 28, 15);
         }
     }
     // .content-footer__item
@@ -86,7 +82,10 @@
             flex-direction: row-reverse;
             &::before {
                 rotate: 90deg;
-                z-index: -1;
+                transition: rotate 0.5s;
+                [data-footer-menu-open] & {
+                    rotate: -90deg;
+                }
             }
         }
     }

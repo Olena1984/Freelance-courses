@@ -1,0 +1,8 @@
+<svg viewBox="0 0 14 2" fill="none" width="224" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <style>
+        :root, .palette0 {color: currentColor;
+            --color0: #2f302c;
+        }
+    </style>
+    <path fill="var(--color0, #2f302c)" d="M12.75 0c0.4142 0 0.75 0.3358 0.75 0.75S13.1642 1.5 12.75 1.5h-12C0.3358 1.5 0 1.1642 0 0.75S0.3358 0 0.75 0z" />
+</svg>

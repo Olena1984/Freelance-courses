@@ -1,0 +1,61 @@
+@use "_reset.scss";
+@use "_fonts.scss";
+@use "_icons.scss";
+@use "_variables.scss";
+@use "_mixins.scss" as *;
+@use "_typo.scss" as *;
+// @use "_colors.scss" as *; /* варіант підключення кольорів через scss */
+@use "colors.css";
+@use "_components.scss" as *;
+@use "_header.scss";
+@use "_footer.scss";
+@use "_main.scss";
+
+/* 
+font-family: "Montserrat", sans-serif; */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    color: var(--black-1);
+}
+.wrapper > main {
+    flex-grow: 1;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    overflow: clip;
+
+    display: flex;
+    flex-direction: column;
+}
+
+[class*="__container"] {
+    max-width: 1422px;
+    margin: 0 auto;
+    padding-inline: toRem(15);
+}
+
+/*============= hero ==================== */
+
+.page {
+    &--scroll-padding {
+        @include adaptiveValue("padding-top", 164, 70, 0, 1392, 670);
+    }
+    > *:not([class*="--nopadding-top"]) {
+        @include adaptiveValue("padding-top", 82, 25);
+    }
+    > *:not([class*="--nomargin-bottom"]) {
+        @include adaptiveValue("margin-bottom", 82, 25);
+    }
+    // .page__hero
+    &__hero {
+    }
+    &__benefits {
+    }
+    &__featured-products {
+    }
+}
+
+/* ======= catalog-preview ==================== */

@@ -2007,14 +2007,18 @@ html:not([data-fls-touch]) .item-product__link-title:hover {
   }
 }
 .benefits__item {
-  translate: -100% 0;
+  -webkit-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+          transform: translateX(-300px);
   opacity: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .benefits__item.animate {
   opacity: 1;
-  translate: 0 0;
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
 }
 .benefits__item.animate:nth-child(1) {
   -webkit-transition-delay: 0.2s;
@@ -2039,11 +2043,6 @@ html:not([data-fls-touch]) .item-product__link-title:hover {
 .benefits__item.animate:nth-child(6) {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
-}
-@media (width <= 48em) {
-  .benefits__item.animate {
-    translate: 0;
-  }
 }
 
 .item-benefit {

@@ -61,6 +61,7 @@ function load() {
 		const callback = (entries, observer) => {
 			entries.forEach(entry =>{
 				const currentElement = entry.target
+				console.log('Is intersecting:', entry.isIntersecting, entry.target)
 				if (entry.isIntersecting) {
 				// currentElement.style.opacity = "1" 
 				// currentElement.style.scale = "1" 

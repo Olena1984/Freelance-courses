@@ -52,7 +52,7 @@ function load() {
 	initFooterMenus()
 	initSubMenu()
 	addTouchAttr()
-	// ====================
+	// =======intrsection observer =============
 		const options = {
 			root: null,
 			rootMargin: "0px 0px 0px 0px",
@@ -85,7 +85,7 @@ function load() {
 	window.addEventListener('scroll', windowScroll)
 
 	const headerElement = document.querySelector('.header')
-
+	// ===== подія при скролі=====
 	function windowScroll(e) {
 		if (scrollY > 10) {
 			headerElement.classList.add('header--scroll')	
@@ -97,7 +97,7 @@ function load() {
 		
 		
 	}
-
+	// ===== подія при кліку======
 	function documentAction(e){
 		const targetElement = e.target;
 		if (isMobile.any()) {

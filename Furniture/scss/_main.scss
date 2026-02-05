@@ -315,20 +315,20 @@
 		align-items: center;
 		gap: toRem(32);
 
-		// @media (width <= toEm(768)) {
-			opacity: 0;
-			scale: 0;
-			transition: all 0.3s;
-			&.animate {
-				opacity: 1;
-				scale: 1;
-				@for $i from 1 through 6 {
-					&:nth-child(#{$i}) {
-						transition-delay: #{$i * 0.3}s;
-					}
+		
+		opacity: 0;
+		scale: 0;
+		transition: all 0.3s;
+		&.animate {
+			opacity: 1;
+			scale: 1;
+			@for $i from 1 through 6 {
+				&:nth-child(#{$i}) {
+					transition-delay: #{$i * 0.1}s;
 				}
 			}
-		// }
+		}
+		
 	}
 
 	// .item-product__link
@@ -443,40 +443,26 @@
 	}
 	// .benefits__item
 	&__item {
-		// @media (width <= toEm(768)) {
-			// scale: 0;
-			transform: translateX(-100%);
-			opacity: 0;
-			transition: all 0.5s;
-			&.animate {
-				// scale: 1;
-				opacity: 1;
-				transform: translateX(0);
-				@for $i from 1 through 6 {
-					&:nth-child(#{$i}) {
-						transition-delay: #{$i * 0.4}s;
-					}
+		
+		translate:-100% 0;
+		opacity: 0;
+		transition: all 0.5s;
+		&.animate {
+			opacity: 1;
+			translate: 0 0;
+			@for $i from 1 through 6 {
+				&:nth-child(#{$i}) {
+					transition-delay: #{$i * 0.2}s;
 				}
-				// &:nth-child(1){
-				// 	transition-delay: 0.1s;
-				// }
-				// &:nth-child(2){
-				// 	transition-delay: 0.2s;
-				// }
-				// &:nth-child(3){
-				// 	transition-delay: 0.3s;
-				// }
-				// &:nth-child(4){
-				// 	transition-delay: 0.4s;
-				// }
-				// &:nth-child(5){
-				// 	transition-delay: 0.5s;
-				// }
-				// &:nth-child(6){
-				// 	transition-delay: 0.6s;
-				// }
 			}
-		// }
+		}
+		@media (width <= toEm(768)){
+			&.animate{
+				translate: 0;
+			}
+		}
+		
+		
 	}
 }
 .title {
